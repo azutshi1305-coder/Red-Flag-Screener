@@ -6,7 +6,7 @@ These decisions are **recorded here only** — they are implemented in Step 4.
 
 ## Decisions table
 
-| Company | Field | Years missing | Decision | Reason/Source |
+| Company | Field | Years missing | Decision | Reason/Source |`
 |---|---|---|---|---|
 | ABBOTINDIA.NS | Long Term Debt | All years in the 3-year window (FY2024, FY2025, FY2026) | Use Total Debt in place of Long Term Debt, for all years | Screener.in borrowings match Yahoo's Total Debt exactly (₹172 / 197 crore). Debt appears only from FY2020, consistent with Ind AS 116 lease liabilities, not bank loans. |
 | DIVISLAB.NS | Long Term Debt | All years in the 3-year window (FY2024, FY2025, FY2026) | Use Total Debt in place of Long Term Debt, for all years | Screener.in borrowings match Yahoo's Total Debt exactly (₹4 / 7 crore). |
