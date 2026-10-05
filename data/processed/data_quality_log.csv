@@ -1,0 +1,641 @@
+ticker,fiscal_year,check,field,detail
+ABBOTINDIA.NS,,source_used,revenue,Total Revenue (income_statement)
+ABBOTINDIA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+ABBOTINDIA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+ABBOTINDIA.NS,,source_used,ebit,EBIT (income_statement)
+ABBOTINDIA.NS,,source_used,net_income,Net Income (income_statement)
+ABBOTINDIA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+ABBOTINDIA.NS,,source_used,sga,Selling General And Administration (income_statement)
+ABBOTINDIA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+ABBOTINDIA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+ABBOTINDIA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+ABBOTINDIA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+ABBOTINDIA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+ABBOTINDIA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+ABBOTINDIA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+ABBOTINDIA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+ABBOTINDIA.NS,,source_used,inventory,Inventory (balance_sheet)
+ABBOTINDIA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+ABBOTINDIA.NS,,source_used,long_term_debt,NOT FOUND in any candidate row
+ABBOTINDIA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+ABBOTINDIA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+ABBOTINDIA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+ABBOTINDIA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+ABBOTINDIA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+ABBOTINDIA.NS,2022.0,empty_year_dropped,,no values in any standard field
+ABBOTINDIA.NS,2023.0,adjustment,long_term_debt,long_term_debt set to total_debt
+ABBOTINDIA.NS,2024.0,adjustment,long_term_debt,long_term_debt set to total_debt
+ABBOTINDIA.NS,2025.0,adjustment,long_term_debt,long_term_debt set to total_debt
+ABBOTINDIA.NS,2026.0,adjustment,long_term_debt,long_term_debt set to total_debt
+AJANTPHARM.NS,,source_used,revenue,Total Revenue (income_statement)
+AJANTPHARM.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+AJANTPHARM.NS,,source_used,gross_profit,Gross Profit (income_statement)
+AJANTPHARM.NS,,source_used,ebit,EBIT (income_statement)
+AJANTPHARM.NS,,source_used,net_income,Net Income (income_statement)
+AJANTPHARM.NS,,source_used,interest_expense,Interest Expense (income_statement)
+AJANTPHARM.NS,,source_used,sga,Selling General And Administration (income_statement)
+AJANTPHARM.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+AJANTPHARM.NS,,source_used,total_assets,Total Assets (balance_sheet)
+AJANTPHARM.NS,,source_used,current_assets,Current Assets (balance_sheet)
+AJANTPHARM.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+AJANTPHARM.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+AJANTPHARM.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+AJANTPHARM.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+AJANTPHARM.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+AJANTPHARM.NS,,source_used,inventory,Inventory (balance_sheet)
+AJANTPHARM.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+AJANTPHARM.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+AJANTPHARM.NS,,source_used,total_debt,Total Debt (balance_sheet)
+AJANTPHARM.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+AJANTPHARM.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+AJANTPHARM.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+AJANTPHARM.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+AJANTPHARM.NS,2022.0,adjustment,long_term_debt,long_term_debt set to total_debt (replaced Yahoo value of 1.64 crore)
+AJANTPHARM.NS,2023.0,adjustment,long_term_debt,long_term_debt set to total_debt (replaced Yahoo value of 1.25 crore)
+AJANTPHARM.NS,2024.0,adjustment,long_term_debt,long_term_debt set to total_debt (replaced Yahoo value of 0.00 crore)
+AJANTPHARM.NS,2025.0,adjustment,long_term_debt,long_term_debt set to total_debt
+AJANTPHARM.NS,2026.0,adjustment,long_term_debt,long_term_debt set to total_debt
+AJANTPHARM.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+AJANTPHARM.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,sga,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,retained_earnings,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+AJANTPHARM.NS,2022.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+ALKEM.NS,,source_used,revenue,Total Revenue (income_statement)
+ALKEM.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+ALKEM.NS,,source_used,gross_profit,Gross Profit (income_statement)
+ALKEM.NS,,source_used,ebit,EBIT (income_statement)
+ALKEM.NS,,source_used,net_income,Net Income (income_statement)
+ALKEM.NS,,source_used,interest_expense,Interest Expense (income_statement)
+ALKEM.NS,,source_used,sga,Selling General And Administration (income_statement)
+ALKEM.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+ALKEM.NS,,source_used,total_assets,Total Assets (balance_sheet)
+ALKEM.NS,,source_used,current_assets,Current Assets (balance_sheet)
+ALKEM.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+ALKEM.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+ALKEM.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+ALKEM.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+ALKEM.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+ALKEM.NS,,source_used,inventory,Inventory (balance_sheet)
+ALKEM.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+ALKEM.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+ALKEM.NS,,source_used,total_debt,Total Debt (balance_sheet)
+ALKEM.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+ALKEM.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+ALKEM.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+ALKEM.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+ALKEM.NS,2022.0,empty_year_dropped,,no values in any standard field
+AUROPHARMA.NS,,source_used,revenue,Total Revenue (income_statement)
+AUROPHARMA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+AUROPHARMA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+AUROPHARMA.NS,,source_used,ebit,EBIT (income_statement)
+AUROPHARMA.NS,,source_used,net_income,Net Income (income_statement)
+AUROPHARMA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+AUROPHARMA.NS,,source_used,sga,Selling General And Administration (income_statement)
+AUROPHARMA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+AUROPHARMA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+AUROPHARMA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+AUROPHARMA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+AUROPHARMA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+AUROPHARMA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+AUROPHARMA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+AUROPHARMA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+AUROPHARMA.NS,,source_used,inventory,Inventory (balance_sheet)
+AUROPHARMA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+AUROPHARMA.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+AUROPHARMA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+AUROPHARMA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+AUROPHARMA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+AUROPHARMA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+AUROPHARMA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+AUROPHARMA.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+AUROPHARMA.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,retained_earnings,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2022.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+AUROPHARMA.NS,2025.0,missing_required,sga,blank in Yahoo data; left as NaN
+BIOCON.NS,,source_used,revenue,Total Revenue (income_statement)
+BIOCON.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+BIOCON.NS,,source_used,gross_profit,Gross Profit (income_statement)
+BIOCON.NS,,source_used,ebit,EBIT (income_statement)
+BIOCON.NS,,source_used,net_income,Net Income (income_statement)
+BIOCON.NS,,source_used,interest_expense,Interest Expense (income_statement)
+BIOCON.NS,,source_used,sga,Selling General And Administration (income_statement)
+BIOCON.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+BIOCON.NS,,source_used,total_assets,Total Assets (balance_sheet)
+BIOCON.NS,,source_used,current_assets,Current Assets (balance_sheet)
+BIOCON.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+BIOCON.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+BIOCON.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+BIOCON.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+BIOCON.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+BIOCON.NS,,source_used,inventory,Inventory (balance_sheet)
+BIOCON.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+BIOCON.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+BIOCON.NS,,source_used,total_debt,Total Debt (balance_sheet)
+BIOCON.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+BIOCON.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+BIOCON.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+BIOCON.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+BIOCON.NS,2022.0,empty_year_dropped,,no values in any standard field
+CIPLA.NS,,source_used,revenue,Total Revenue (income_statement)
+CIPLA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+CIPLA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+CIPLA.NS,,source_used,ebit,EBIT (income_statement)
+CIPLA.NS,,source_used,net_income,Net Income (income_statement)
+CIPLA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+CIPLA.NS,,source_used,sga,Selling General And Administration (income_statement)
+CIPLA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+CIPLA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+CIPLA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+CIPLA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+CIPLA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+CIPLA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+CIPLA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+CIPLA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+CIPLA.NS,,source_used,inventory,Inventory (balance_sheet)
+CIPLA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+CIPLA.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+CIPLA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+CIPLA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+CIPLA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+CIPLA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+CIPLA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+CIPLA.NS,2022.0,empty_year_dropped,,no values in any standard field
+DIVISLAB.NS,,source_used,revenue,Total Revenue (income_statement)
+DIVISLAB.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+DIVISLAB.NS,,source_used,gross_profit,Gross Profit (income_statement)
+DIVISLAB.NS,,source_used,ebit,EBIT (income_statement)
+DIVISLAB.NS,,source_used,net_income,Net Income (income_statement)
+DIVISLAB.NS,,source_used,interest_expense,Interest Expense (income_statement)
+DIVISLAB.NS,,source_used,sga,Selling General And Administration (income_statement)
+DIVISLAB.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+DIVISLAB.NS,,source_used,total_assets,Total Assets (balance_sheet)
+DIVISLAB.NS,,source_used,current_assets,Current Assets (balance_sheet)
+DIVISLAB.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+DIVISLAB.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+DIVISLAB.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+DIVISLAB.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+DIVISLAB.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+DIVISLAB.NS,,source_used,inventory,Inventory (balance_sheet)
+DIVISLAB.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+DIVISLAB.NS,,source_used,long_term_debt,NOT FOUND in any candidate row
+DIVISLAB.NS,,source_used,total_debt,Total Debt (balance_sheet)
+DIVISLAB.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+DIVISLAB.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+DIVISLAB.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+DIVISLAB.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+DIVISLAB.NS,2022.0,empty_year_dropped,,no values in any standard field
+DIVISLAB.NS,2023.0,adjustment,long_term_debt,long_term_debt set to total_debt
+DIVISLAB.NS,2024.0,adjustment,long_term_debt,long_term_debt set to total_debt
+DIVISLAB.NS,2025.0,adjustment,long_term_debt,long_term_debt set to total_debt
+DIVISLAB.NS,2026.0,adjustment,long_term_debt,long_term_debt set to total_debt
+DRREDDY.NS,,source_used,revenue,Total Revenue (income_statement)
+DRREDDY.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+DRREDDY.NS,,source_used,gross_profit,Gross Profit (income_statement)
+DRREDDY.NS,,source_used,ebit,EBIT (income_statement)
+DRREDDY.NS,,source_used,net_income,Net Income (income_statement)
+DRREDDY.NS,,source_used,interest_expense,Interest Expense (income_statement)
+DRREDDY.NS,,source_used,sga,Selling General And Administration (income_statement)
+DRREDDY.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+DRREDDY.NS,,source_used,total_assets,Total Assets (balance_sheet)
+DRREDDY.NS,,source_used,current_assets,Current Assets (balance_sheet)
+DRREDDY.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+DRREDDY.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+DRREDDY.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+DRREDDY.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+DRREDDY.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+DRREDDY.NS,,source_used,inventory,Inventory (balance_sheet)
+DRREDDY.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+DRREDDY.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+DRREDDY.NS,,source_used,total_debt,Total Debt (balance_sheet)
+DRREDDY.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+DRREDDY.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+DRREDDY.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+DRREDDY.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+DRREDDY.NS,2024.0,adjustment,depreciation,"depreciation from manual override: 1470 crore (Screener.in consolidated P&L, Mar 2024)"
+DRREDDY.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+DRREDDY.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,sga,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,retained_earnings,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+DRREDDY.NS,2022.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+DRREDDY.NS,2023.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+DRREDDY.NS,2023.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+GLAND.NS,,source_used,revenue,Total Revenue (income_statement)
+GLAND.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+GLAND.NS,,source_used,gross_profit,Gross Profit (income_statement)
+GLAND.NS,,source_used,ebit,EBIT (income_statement)
+GLAND.NS,,source_used,net_income,Net Income (income_statement)
+GLAND.NS,,source_used,interest_expense,Interest Expense (income_statement)
+GLAND.NS,,source_used,sga,Selling General And Administration (income_statement)
+GLAND.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+GLAND.NS,,source_used,total_assets,Total Assets (balance_sheet)
+GLAND.NS,,source_used,current_assets,Current Assets (balance_sheet)
+GLAND.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+GLAND.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+GLAND.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+GLAND.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+GLAND.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+GLAND.NS,,source_used,inventory,Inventory (balance_sheet)
+GLAND.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+GLAND.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+GLAND.NS,,source_used,total_debt,Total Debt (balance_sheet)
+GLAND.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+GLAND.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+GLAND.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+GLAND.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+GLAND.NS,2022.0,empty_year_dropped,,no values in any standard field
+GLAND.NS,2023.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+GLAND.NS,2024.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+GLENMARK.NS,,source_used,revenue,Total Revenue (income_statement)
+GLENMARK.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+GLENMARK.NS,,source_used,gross_profit,Gross Profit (income_statement)
+GLENMARK.NS,,source_used,ebit,EBIT (income_statement)
+GLENMARK.NS,,source_used,net_income,Net Income (income_statement)
+GLENMARK.NS,,source_used,interest_expense,Interest Expense (income_statement)
+GLENMARK.NS,,source_used,sga,Selling General And Administration (income_statement)
+GLENMARK.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+GLENMARK.NS,,source_used,total_assets,Total Assets (balance_sheet)
+GLENMARK.NS,,source_used,current_assets,Current Assets (balance_sheet)
+GLENMARK.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+GLENMARK.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+GLENMARK.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+GLENMARK.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+GLENMARK.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+GLENMARK.NS,,source_used,inventory,Inventory (balance_sheet)
+GLENMARK.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+GLENMARK.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+GLENMARK.NS,,source_used,total_debt,Total Debt (balance_sheet)
+GLENMARK.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+GLENMARK.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+GLENMARK.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+GLENMARK.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+GLENMARK.NS,2022.0,empty_year_dropped,,no values in any standard field
+IPCALAB.NS,,source_used,revenue,Total Revenue (income_statement)
+IPCALAB.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+IPCALAB.NS,,source_used,gross_profit,Gross Profit (income_statement)
+IPCALAB.NS,,source_used,ebit,EBIT (income_statement)
+IPCALAB.NS,,source_used,net_income,Net Income (income_statement)
+IPCALAB.NS,,source_used,interest_expense,Interest Expense (income_statement)
+IPCALAB.NS,,source_used,sga,Selling General And Administration (income_statement)
+IPCALAB.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+IPCALAB.NS,,source_used,total_assets,Total Assets (balance_sheet)
+IPCALAB.NS,,source_used,current_assets,Current Assets (balance_sheet)
+IPCALAB.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+IPCALAB.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+IPCALAB.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+IPCALAB.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+IPCALAB.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+IPCALAB.NS,,source_used,inventory,Inventory (balance_sheet)
+IPCALAB.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+IPCALAB.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+IPCALAB.NS,,source_used,total_debt,Total Debt (balance_sheet)
+IPCALAB.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+IPCALAB.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+IPCALAB.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+IPCALAB.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+IPCALAB.NS,2022.0,empty_year_dropped,,no values in any standard field
+LAURUSLABS.NS,,source_used,revenue,Total Revenue (income_statement)
+LAURUSLABS.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+LAURUSLABS.NS,,source_used,gross_profit,Gross Profit (income_statement)
+LAURUSLABS.NS,,source_used,ebit,EBIT (income_statement)
+LAURUSLABS.NS,,source_used,net_income,Net Income (income_statement)
+LAURUSLABS.NS,,source_used,interest_expense,Interest Expense (income_statement)
+LAURUSLABS.NS,,source_used,sga,Selling General And Administration (income_statement)
+LAURUSLABS.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+LAURUSLABS.NS,,source_used,total_assets,Total Assets (balance_sheet)
+LAURUSLABS.NS,,source_used,current_assets,Current Assets (balance_sheet)
+LAURUSLABS.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+LAURUSLABS.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+LAURUSLABS.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+LAURUSLABS.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+LAURUSLABS.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+LAURUSLABS.NS,,source_used,inventory,Inventory (balance_sheet)
+LAURUSLABS.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+LAURUSLABS.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+LAURUSLABS.NS,,source_used,total_debt,Total Debt (balance_sheet)
+LAURUSLABS.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+LAURUSLABS.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+LAURUSLABS.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+LAURUSLABS.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+LAURUSLABS.NS,2022.0,empty_year_dropped,,no values in any standard field
+LUPIN.NS,,source_used,revenue,Total Revenue (income_statement)
+LUPIN.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+LUPIN.NS,,source_used,gross_profit,Gross Profit (income_statement)
+LUPIN.NS,,source_used,ebit,EBIT (income_statement)
+LUPIN.NS,,source_used,net_income,Net Income (income_statement)
+LUPIN.NS,,source_used,interest_expense,Interest Expense (income_statement)
+LUPIN.NS,,source_used,sga,Selling General And Administration (income_statement)
+LUPIN.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+LUPIN.NS,,source_used,total_assets,Total Assets (balance_sheet)
+LUPIN.NS,,source_used,current_assets,Current Assets (balance_sheet)
+LUPIN.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+LUPIN.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+LUPIN.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+LUPIN.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+LUPIN.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+LUPIN.NS,,source_used,inventory,Inventory (balance_sheet)
+LUPIN.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+LUPIN.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+LUPIN.NS,,source_used,total_debt,Total Debt (balance_sheet)
+LUPIN.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+LUPIN.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+LUPIN.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+LUPIN.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+LUPIN.NS,2022.0,empty_year_dropped,,no values in any standard field
+MANKIND.NS,,source_used,revenue,Total Revenue (income_statement)
+MANKIND.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+MANKIND.NS,,source_used,gross_profit,Gross Profit (income_statement)
+MANKIND.NS,,source_used,ebit,EBIT (income_statement)
+MANKIND.NS,,source_used,net_income,Net Income (income_statement)
+MANKIND.NS,,source_used,interest_expense,Interest Expense (income_statement)
+MANKIND.NS,,source_used,sga,Selling General And Administration (income_statement)
+MANKIND.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+MANKIND.NS,,source_used,total_assets,Total Assets (balance_sheet)
+MANKIND.NS,,source_used,current_assets,Current Assets (balance_sheet)
+MANKIND.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+MANKIND.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+MANKIND.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+MANKIND.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+MANKIND.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+MANKIND.NS,,source_used,inventory,Inventory (balance_sheet)
+MANKIND.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+MANKIND.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+MANKIND.NS,,source_used,total_debt,Total Debt (balance_sheet)
+MANKIND.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+MANKIND.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+MANKIND.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+MANKIND.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+MANKIND.NS,2022.0,empty_year_dropped,,no values in any standard field
+MANKIND.NS,2023.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+MANKIND.NS,2024.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+MANKIND.NS,2025.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,,source_used,revenue,Total Revenue (income_statement)
+PPLPHARMA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+PPLPHARMA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+PPLPHARMA.NS,,source_used,ebit,EBIT (income_statement)
+PPLPHARMA.NS,,source_used,net_income,Net Income (income_statement)
+PPLPHARMA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+PPLPHARMA.NS,,source_used,sga,Selling General And Administration (income_statement)
+PPLPHARMA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+PPLPHARMA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+PPLPHARMA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+PPLPHARMA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+PPLPHARMA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+PPLPHARMA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+PPLPHARMA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+PPLPHARMA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+PPLPHARMA.NS,,source_used,inventory,Inventory (balance_sheet)
+PPLPHARMA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+PPLPHARMA.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+PPLPHARMA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+PPLPHARMA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+PPLPHARMA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+PPLPHARMA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+PPLPHARMA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+PPLPHARMA.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+PPLPHARMA.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,sga,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2023.0,missing_required,retained_earnings,blank in Yahoo data; left as NaN
+PPLPHARMA.NS,2024.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+SAILIFE.NS,,source_used,revenue,Total Revenue (income_statement)
+SAILIFE.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+SAILIFE.NS,,source_used,gross_profit,Gross Profit (income_statement)
+SAILIFE.NS,,source_used,ebit,EBIT (income_statement)
+SAILIFE.NS,,source_used,net_income,Net Income (income_statement)
+SAILIFE.NS,,source_used,interest_expense,Interest Expense (income_statement)
+SAILIFE.NS,,source_used,sga,Selling General And Administration (income_statement)
+SAILIFE.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+SAILIFE.NS,,source_used,total_assets,Total Assets (balance_sheet)
+SAILIFE.NS,,source_used,current_assets,Current Assets (balance_sheet)
+SAILIFE.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+SAILIFE.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+SAILIFE.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+SAILIFE.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+SAILIFE.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+SAILIFE.NS,,source_used,inventory,Inventory (balance_sheet)
+SAILIFE.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+SAILIFE.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+SAILIFE.NS,,source_used,total_debt,Total Debt (balance_sheet)
+SAILIFE.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+SAILIFE.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+SAILIFE.NS,,source_used,dividends_paid,NOT FOUND in any candidate row
+SAILIFE.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+SAILIFE.NS,2022.0,empty_year_dropped,,no values in any standard field
+SAILIFE.NS,2023.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+SAILIFE.NS,2024.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+SAILIFE.NS,2025.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+SAILIFE.NS,2026.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+SUNPHARMA.NS,,source_used,revenue,Total Revenue (income_statement)
+SUNPHARMA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+SUNPHARMA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+SUNPHARMA.NS,,source_used,ebit,EBIT (income_statement)
+SUNPHARMA.NS,,source_used,net_income,Net Income (income_statement)
+SUNPHARMA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+SUNPHARMA.NS,,source_used,sga,Selling General And Administration (income_statement)
+SUNPHARMA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+SUNPHARMA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+SUNPHARMA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+SUNPHARMA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+SUNPHARMA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+SUNPHARMA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+SUNPHARMA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+SUNPHARMA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+SUNPHARMA.NS,,source_used,inventory,Inventory (balance_sheet)
+SUNPHARMA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+SUNPHARMA.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+SUNPHARMA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+SUNPHARMA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+SUNPHARMA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+SUNPHARMA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+SUNPHARMA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+SUNPHARMA.NS,2022.0,empty_year_dropped,,no values in any standard field
+TORNTPHARM.NS,,source_used,revenue,Total Revenue (income_statement)
+TORNTPHARM.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+TORNTPHARM.NS,,source_used,gross_profit,Gross Profit (income_statement)
+TORNTPHARM.NS,,source_used,ebit,EBIT (income_statement)
+TORNTPHARM.NS,,source_used,net_income,Net Income (income_statement)
+TORNTPHARM.NS,,source_used,interest_expense,Interest Expense (income_statement)
+TORNTPHARM.NS,,source_used,sga,Selling General And Administration (income_statement)
+TORNTPHARM.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+TORNTPHARM.NS,,source_used,total_assets,Total Assets (balance_sheet)
+TORNTPHARM.NS,,source_used,current_assets,Current Assets (balance_sheet)
+TORNTPHARM.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+TORNTPHARM.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+TORNTPHARM.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+TORNTPHARM.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+TORNTPHARM.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+TORNTPHARM.NS,,source_used,inventory,Inventory (balance_sheet)
+TORNTPHARM.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+TORNTPHARM.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+TORNTPHARM.NS,,source_used,total_debt,Total Debt (balance_sheet)
+TORNTPHARM.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+TORNTPHARM.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+TORNTPHARM.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+TORNTPHARM.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+TORNTPHARM.NS,2025.0,adjustment,retained_earnings,retained_earnings rolled forward from FY2024: 3942.40 + 1911.25 - 1083.03 = 4770.62 crore
+TORNTPHARM.NS,2026.0,adjustment,retained_earnings,retained_earnings rolled forward from FY2025: 4770.62 + 2163.37 - 1288.94 = 5645.05 crore
+TORNTPHARM.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+TORNTPHARM.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,sga,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+TORNTPHARM.NS,2022.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,,source_used,revenue,Total Revenue (income_statement)
+WOCKPHARMA.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+WOCKPHARMA.NS,,source_used,gross_profit,Gross Profit (income_statement)
+WOCKPHARMA.NS,,source_used,ebit,EBIT (income_statement)
+WOCKPHARMA.NS,,source_used,net_income,Net Income (income_statement)
+WOCKPHARMA.NS,,source_used,interest_expense,Interest Expense (income_statement)
+WOCKPHARMA.NS,,source_used,sga,Selling General And Administration (income_statement)
+WOCKPHARMA.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+WOCKPHARMA.NS,,source_used,total_assets,Total Assets (balance_sheet)
+WOCKPHARMA.NS,,source_used,current_assets,Current Assets (balance_sheet)
+WOCKPHARMA.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+WOCKPHARMA.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+WOCKPHARMA.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+WOCKPHARMA.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+WOCKPHARMA.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+WOCKPHARMA.NS,,source_used,inventory,Inventory (balance_sheet)
+WOCKPHARMA.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+WOCKPHARMA.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+WOCKPHARMA.NS,,source_used,total_debt,Total Debt (balance_sheet)
+WOCKPHARMA.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+WOCKPHARMA.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+WOCKPHARMA.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+WOCKPHARMA.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+WOCKPHARMA.NS,2022.0,balance_check_not_possible,,"total_assets, total_liabilities or total equity incl. minority interest is blank"
+WOCKPHARMA.NS,2022.0,missing_required,revenue,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,cost_of_revenue,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,gross_profit,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,ebit,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,net_income,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,interest_expense,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,sga,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,depreciation,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,total_assets,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,current_assets,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,current_liabilities,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,retained_earnings,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,total_equity,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,total_liabilities,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,receivables,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,inventory,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,net_ppe,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,long_term_debt,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,total_debt,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,shares_outstanding,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2022.0,missing_required,operating_cash_flow,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2023.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2024.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2025.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+WOCKPHARMA.NS,2026.0,missing_required,dividends_paid,blank in Yahoo data; left as NaN
+ZYDUSLIFE.NS,,source_used,revenue,Total Revenue (income_statement)
+ZYDUSLIFE.NS,,source_used,cost_of_revenue,Cost Of Revenue (income_statement)
+ZYDUSLIFE.NS,,source_used,gross_profit,Gross Profit (income_statement)
+ZYDUSLIFE.NS,,source_used,ebit,EBIT (income_statement)
+ZYDUSLIFE.NS,,source_used,net_income,Net Income (income_statement)
+ZYDUSLIFE.NS,,source_used,interest_expense,Interest Expense (income_statement)
+ZYDUSLIFE.NS,,source_used,sga,Selling General And Administration (income_statement)
+ZYDUSLIFE.NS,,source_used,depreciation,Depreciation And Amortization In Income Statement (income_statement)
+ZYDUSLIFE.NS,,source_used,total_assets,Total Assets (balance_sheet)
+ZYDUSLIFE.NS,,source_used,current_assets,Current Assets (balance_sheet)
+ZYDUSLIFE.NS,,source_used,current_liabilities,Current Liabilities (balance_sheet)
+ZYDUSLIFE.NS,,source_used,retained_earnings,Retained Earnings (balance_sheet)
+ZYDUSLIFE.NS,,source_used,total_equity,Stockholders Equity (balance_sheet)
+ZYDUSLIFE.NS,,source_used,total_liabilities,Total Liabilities Net Minority Interest (balance_sheet)
+ZYDUSLIFE.NS,,source_used,receivables,Accounts Receivable (balance_sheet)
+ZYDUSLIFE.NS,,source_used,inventory,Inventory (balance_sheet)
+ZYDUSLIFE.NS,,source_used,net_ppe,Net PPE (balance_sheet)
+ZYDUSLIFE.NS,,source_used,long_term_debt,Long Term Debt (balance_sheet)
+ZYDUSLIFE.NS,,source_used,total_debt,Total Debt (balance_sheet)
+ZYDUSLIFE.NS,,source_used,shares_outstanding,Ordinary Shares Number (balance_sheet)
+ZYDUSLIFE.NS,,source_used,operating_cash_flow,Operating Cash Flow (cash_flow)
+ZYDUSLIFE.NS,,source_used,dividends_paid,Cash Dividends Paid (cash_flow)
+ZYDUSLIFE.NS,,source_used,total_equity_incl_mi,Total Equity Gross Minority Interest (balance_sheet)
+ZYDUSLIFE.NS,2022.0,empty_year_dropped,,no values in any standard field

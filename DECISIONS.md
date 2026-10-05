@@ -26,3 +26,9 @@ These decisions are **recorded here only** — they are implemented in Step 4.
 ## Notes for analysis
 
 - Torrent Pharmaceuticals' (TORNTPHARM.NS) borrowings rose from ₹3,202 crore (FY2025) to ₹15,026 crore (FY2026) per Screener.in, likely due to a debt-funded acquisition. Its FY2026 scores (Altman Z'', Piotroski F, Beneish M) must be interpreted with this leverage jump in mind rather than taken at face value as organic deterioration.
+
+## Step 4: cleaning
+
+- **Years kept:** `data/processed/financials_clean.csv` keeps every fiscal year Yahoo reports, including FY2022, so it is a complete record. Scoring uses only FY2023–FY2026. Main scores are for FY2026, with FY2025 as a secondary year.
+- **Dividend gaps left as NaN:** blank `dividends_paid` values (e.g. Mankind FY2023–FY2025, Wockpharma, Gland, Sai Life) are not filled with zero or estimated. Dividends are used only in the Torrent retained-earnings roll-forward.
+- **Added Yahoo mappings:** `cost_of_revenue` uses the Yahoo row "Cost Of Revenue" (income statement). `dividends_paid` uses "Cash Dividends Paid" (cash flow), with "Common Stock Dividend Paid" as fallback. Neither was mapped in Step 3.
