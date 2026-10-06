@@ -38,6 +38,34 @@ NSE_SUFFIX = ".NS"
 # should have at least one row.
 PRICE_PERIOD = "5d"
 
+# Short, readable company names for chart labels and the Excel watchlist.
+# company_name (from NSE) is the full legal name, e.g. "Ajanta Pharmaceuticals
+# Ltd.", which is too long to print under a bar in a chart. These are chosen
+# by hand, not derived automatically, so unusual names (e.g. "Divi's",
+# "Dr Reddy's") stay readable.
+SHORT_NAMES = {
+    "ABBOTINDIA.NS": "Abbott",
+    "AJANTPHARM.NS": "Ajanta",
+    "ALKEM.NS": "Alkem",
+    "AUROPHARMA.NS": "Aurobindo",
+    "BIOCON.NS": "Biocon",
+    "CIPLA.NS": "Cipla",
+    "DIVISLAB.NS": "Divi's",
+    "DRREDDY.NS": "Dr Reddy's",
+    "GLAND.NS": "Gland",
+    "GLENMARK.NS": "Glenmark",
+    "IPCALAB.NS": "IPCA",
+    "LAURUSLABS.NS": "Laurus",
+    "LUPIN.NS": "Lupin",
+    "MANKIND.NS": "Mankind",
+    "PPLPHARMA.NS": "Piramal",
+    "SAILIFE.NS": "Sai Life",
+    "SUNPHARMA.NS": "Sun Pharma",
+    "TORNTPHARM.NS": "Torrent",
+    "WOCKPHARMA.NS": "Wockhardt",
+    "ZYDUSLIFE.NS": "Zydus",
+}
+
 
 # ---------------------------------------------------------------------------
 # Step 1: build the company list
@@ -49,7 +77,8 @@ def build_company_list():
 
     ticker = NSE Symbol + ".NS"
 
-    Returns the company table (columns: ticker, company_name, industry).
+    Returns the company table (columns: ticker, company_name, short_name,
+    industry).
     """
     source = pd.read_csv(SOURCE_FILE)
 
@@ -57,11 +86,23 @@ def build_company_list():
     symbols = source["Symbol"].str.strip()
     names = source["Company Name"].str.strip()
     industries = source["Industry"].str.strip()
+    tickers = symbols + NSE_SUFFIX
 
-    # Build the output table with only the three columns we need.
+    # Look up each ticker's short name from the hand-picked SHORT_NAMES dict.
+    short_names = tickers.map(SHORT_NAMES)
+
+    # If the Nifty Pharma list ever adds/removes a company, SHORT_NAMES will
+    # be missing an entry and short_names will contain NaN. Fail loudly here
+    # instead of silently saving a blank short_name.
+    missing = tickers[short_names.isna()].tolist()
+    if missing:
+        raise ValueError(f"SHORT_NAMES has no entry for: {missing}")
+
+    # Build the output table with the four columns later steps need.
     companies = pd.DataFrame({
-        "ticker": symbols + NSE_SUFFIX,
+        "ticker": tickers,
         "company_name": names,
+        "short_name": short_names,
         "industry": industries,
     })
 

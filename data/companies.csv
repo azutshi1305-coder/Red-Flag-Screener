@@ -1,21 +1,21 @@
-ticker,company_name,industry
-ABBOTINDIA.NS,Abbott India Ltd.,Healthcare
-AJANTPHARM.NS,Ajanta Pharmaceuticals Ltd.,Healthcare
-ALKEM.NS,Alkem Laboratories Ltd.,Healthcare
-AUROPHARMA.NS,Aurobindo Pharma Ltd.,Healthcare
-BIOCON.NS,Biocon Ltd.,Healthcare
-CIPLA.NS,Cipla Ltd.,Healthcare
-DIVISLAB.NS,Divi's Laboratories Ltd.,Healthcare
-DRREDDY.NS,Dr. Reddy's Laboratories Ltd.,Healthcare
-GLAND.NS,Gland Pharma Ltd.,Healthcare
-GLENMARK.NS,Glenmark Pharmaceuticals Ltd.,Healthcare
-IPCALAB.NS,Ipca Laboratories Ltd.,Healthcare
-LAURUSLABS.NS,Laurus Labs Ltd.,Healthcare
-LUPIN.NS,Lupin Ltd.,Healthcare
-MANKIND.NS,Mankind Pharma Ltd.,Healthcare
-PPLPHARMA.NS,Piramal Pharma Ltd.,Healthcare
-SAILIFE.NS,Sai Life Sciences Ltd.,Healthcare
-SUNPHARMA.NS,Sun Pharmaceutical Industries Ltd.,Healthcare
-TORNTPHARM.NS,Torrent Pharmaceuticals Ltd.,Healthcare
-WOCKPHARMA.NS,Wockhardt Ltd.,Healthcare
-ZYDUSLIFE.NS,Zydus Lifesciences Ltd.,Healthcare
+ticker,company_name,short_name,industry
+ABBOTINDIA.NS,Abbott India Ltd.,Abbott,Healthcare
+AJANTPHARM.NS,Ajanta Pharmaceuticals Ltd.,Ajanta,Healthcare
+ALKEM.NS,Alkem Laboratories Ltd.,Alkem,Healthcare
+AUROPHARMA.NS,Aurobindo Pharma Ltd.,Aurobindo,Healthcare
+BIOCON.NS,Biocon Ltd.,Biocon,Healthcare
+CIPLA.NS,Cipla Ltd.,Cipla,Healthcare
+DIVISLAB.NS,Divi's Laboratories Ltd.,Divi's,Healthcare
+DRREDDY.NS,Dr. Reddy's Laboratories Ltd.,Dr Reddy's,Healthcare
+GLAND.NS,Gland Pharma Ltd.,Gland,Healthcare
+GLENMARK.NS,Glenmark Pharmaceuticals Ltd.,Glenmark,Healthcare
+IPCALAB.NS,Ipca Laboratories Ltd.,IPCA,Healthcare
+LAURUSLABS.NS,Laurus Labs Ltd.,Laurus,Healthcare
+LUPIN.NS,Lupin Ltd.,Lupin,Healthcare
+MANKIND.NS,Mankind Pharma Ltd.,Mankind,Healthcare
+PPLPHARMA.NS,Piramal Pharma Ltd.,Piramal,Healthcare
+SAILIFE.NS,Sai Life Sciences Ltd.,Sai Life,Healthcare
+SUNPHARMA.NS,Sun Pharmaceutical Industries Ltd.,Sun Pharma,Healthcare
+TORNTPHARM.NS,Torrent Pharmaceuticals Ltd.,Torrent,Healthcare
+WOCKPHARMA.NS,Wockhardt Ltd.,Wockhardt,Healthcare
+ZYDUSLIFE.NS,Zydus Lifesciences Ltd.,Zydus,Healthcare
