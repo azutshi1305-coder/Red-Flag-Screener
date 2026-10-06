@@ -48,3 +48,15 @@ These decisions are **recorded here only** — they are implemented in Step 4.
 - **Piotroski NaN handling:** a test whose inputs are missing is NaN, never 0, so missing data is not counted as a failed test. F is the sum of the available tests, and `piotroski_tests_available` records how many there were. The band is still shown, so read it together with that count.
 - **Beneish neutral values:** an index that cannot be computed is set to its neutral value and listed in `score_notes`. The seven ratio indices (DSRI, GMI, AQI, SGI, DEPI, SGAI, LVGI) use 1.0, meaning no change. TATA is a difference, not a ratio, so its neutral value is 0.0.
 - **AUROPHARMA SG&A:** FY2025 SG&A is missing, so SGAI is neutral for FY2025. FY2026 SGAI also needs FY2025 SG&A, so it is neutral too. This matches the Step 3 row above.
+
+## Step 8: flags and risk score
+
+- **F1 receivables outpacing sales:** flagged when receivables growth exceeds revenue growth by more than 10 percentage points (FY2026 vs FY2025).
+- **F2 weak cash conversion:** compares raw operating cash flow with net income, not the cash-conversion ratio, so loss-making years are handled directly. Flagged when at least 2 of FY2024, FY2025 and FY2026 have cash flow below net income. If missing years could still decide the flag, it is NaN; if they cannot, it is 0.
+- **F3 inventory buildup:** flagged when inventory days rise by more than 15 days (FY2026 vs FY2025).
+- **F4 debt stress:** flagged only when total debt rose, interest coverage fell, and total debt is above 10% of total equity in FY2026. The 10% rule is a materiality threshold, so small borrowings cannot trigger the flag. If interest coverage is NaN in either year, F4 = 0.
+- **F5 low interest cover:** flagged when interest coverage is below 1.5. NaN coverage (no interest expense) is 0, not flagged.
+- **Beneish zones:** "Likely" when M > -1.78; "Watch" when -2.22 < M <= -1.78; "Unlikely" when M <= -2.22. The Watch zone exists because Ajanta (M = -1.80) and Abbott (M = -1.66) sit close to the -1.78 cut-off, and the single cut-off gives a flag that depends on a rounding-size difference.
+- **Risk score:** Altman Distress +2, Altman Grey +1; Beneish Likely +2, Watch +1; Piotroski F <= 3 +1; each custom flag +1. Missing flags add nothing. Bands: 0-1 "Low", 2-3 "Watch", 4 or more "High".
+- **Ties:** companies with the same risk score are ordered by lower Altman Z'' first (more distressed first).
+- **Analyst notes:** `data/analyst_notes.csv` holds the project owner's notes, joined unchanged. The Ajanta note originally quoted figures that did not match the cleaned data; this was resolved by rewriting the note to use the project's own data (receivable days 94 -> 125, CFO/EBIT 96% -> 38%), cross-checked against Screener.in's receivables and sales growth figures.
