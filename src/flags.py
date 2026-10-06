@@ -118,14 +118,31 @@ def flag_weak_cash_conversion(df):
     return pd.Series(np.select(conditions, [1.0, 0.0], default=np.nan), index=df.index)
 
 
+def sector_median_inventory_days_change(df):
+    """Median change in inventory days across all companies in df with a change available.
+
+    This is the sector's shared trend. Computing it fresh from df (rather than hardcoding a
+    number) means the flag adapts automatically if the whole sector's inventory days shift
+    in a future year.
+    """
+    return inventory_days_change(df).median()
+
+
 def flag_inventory_buildup(df):
-    """F3: 1 if inventory days rose by more than 15 days, FY2026 vs FY2025.
+    """F3: 1 if a company's change in inventory days is more than 15 days above the sector median change.
 
     Formula: inventory days = inventory / cost of revenue x 365 (from ratios.csv).
-    Flag = 1 if inventory_days_t - inventory_days_(t-1) > 15, else 0. NaN if either year is missing.
+    change_t = inventory_days_t - inventory_days_(t-1).
+    Flag = 1 if change_t > median(change across all companies) + 15, else 0. NaN if change_t is missing.
+
+    Relative rule, not a fixed +15 days: the sector median change was +13.46 days (FY2026 vs
+    FY2025, average +16.20), showing a sector-wide inventory build-up. A fixed threshold would
+    flag companies merely for following that shared trend, so the flag instead measures how far
+    a company's build-up is above its peers.
     """
     change = inventory_days_change(df)
-    return as_test(change > 15, change)
+    median = sector_median_inventory_days_change(df)
+    return as_test(change > median + 15, change)
 
 
 def flag_debt_stress(df):
@@ -164,6 +181,7 @@ def add_flag_columns(df):
     df["receivables_growth"] = receivables_growth(df)
     df["revenue_growth"] = revenue_growth(df)
     df["inventory_days_change"] = inventory_days_change(df)
+    df["inventory_days_sector_median_change"] = sector_median_inventory_days_change(df)
     df["cfo_years_below"] = cfo_years_below(df)
     df[FLAG_COLUMNS[0]] = flag_receivables_outpacing_sales(df)
     df[FLAG_COLUMNS[1]] = flag_weak_cash_conversion(df)
@@ -221,7 +239,13 @@ def score_components(row):
             (1, f"operating cash flow below net income in {int(row['cfo_years_below'])} of 3 years (+1)")
         )
     if row[FLAG_COLUMNS[2]] == 1:
-        parts.append((1, f"inventory days up {row['inventory_days_change']:.0f} (+1)"))
+        parts.append(
+            (
+                1,
+                f"inventory days up {row['inventory_days_change']:.0f} vs sector median "
+                f"{row['inventory_days_sector_median_change']:.0f} (+1)",
+            )
+        )
     if row[FLAG_COLUMNS[3]] == 1:
         parts.append((1, "borrowings up and interest cover down, debt above 10% of equity (+1)"))
     if row[FLAG_COLUMNS[4]] == 1:

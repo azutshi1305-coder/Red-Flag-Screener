@@ -60,6 +60,26 @@ def fy2026_row(years):
     return add_flag_columns(table[table["fiscal_year"] == 2026]).iloc[0]
 
 
+def fy2026_table(companies):
+    """Build the flag table for several synthetic companies and return their FY2026 rows with flags added.
+
+    `companies` maps ticker to a `years` mapping (see fy2026_row). Used for F3, since its flag
+    depends on the sector median across every company in the same fiscal year.
+    """
+    financial_rows, ratio_rows = [], []
+    for ticker, years in companies.items():
+        for year, values in years.items():
+            merged = {**BASE_YEAR, **values}
+            financial_rows.append(
+                {"ticker": ticker, "fiscal_year": year, **{field: merged[field] for field in FINANCIAL_FIELDS}}
+            )
+            ratio_rows.append(
+                {"ticker": ticker, "fiscal_year": year, **{field: merged[field] for field in RATIO_FIELDS}}
+            )
+    table = build_flag_table(pd.DataFrame(financial_rows), pd.DataFrame(ratio_rows))
+    return add_flag_columns(table[table["fiscal_year"] == 2026]).set_index("ticker")
+
+
 def test_f1_triggers_when_receivables_outpace_sales_by_more_than_10_points():
     row = fy2026_row({2025: {}, 2026: {"receivables": 150.0, "revenue": 1000.0}})
     assert row[FLAG_COLUMNS[0]] == 1
@@ -114,14 +134,31 @@ def test_f2_is_zero_when_missing_years_cannot_reach_two():
     assert row[FLAG_COLUMNS[1]] == 0
 
 
-def test_f3_triggers_when_inventory_days_rise_more_than_15():
-    row = fy2026_row({2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 116.0}})
-    assert row[FLAG_COLUMNS[2]] == 1
+def test_f3_triggers_when_change_is_more_than_15_days_above_sector_median():
+    # A's change is 0, B's is 20. Since the target is always the largest of the three, the
+    # sector median is always B's change (20), so the cut-off is 20 + 15 = 35.
+    # The target's change of 36 is above that cut-off.
+    d = fy2026_table(
+        {
+            "A": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 100.0}},
+            "B": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 120.0}},
+            "Target": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 136.0}},
+        }
+    )
+    assert d.loc["Target", FLAG_COLUMNS[2]] == 1
 
 
-def test_f3_does_not_trigger_at_10_days():
-    row = fy2026_row({2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 110.0}})
-    assert row[FLAG_COLUMNS[2]] == 0
+def test_f3_does_not_trigger_at_or_below_the_cutoff():
+    # Same sector as above (median change = 20, cut-off = 35). The target's change of 35 sits
+    # exactly at the cut-off, so "more than 15 days above the median" must not flag it.
+    d = fy2026_table(
+        {
+            "A": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 100.0}},
+            "B": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 120.0}},
+            "Target": {2025: {"inventory_days": 100.0}, 2026: {"inventory_days": 135.0}},
+        }
+    )
+    assert d.loc["Target", FLAG_COLUMNS[2]] == 0
 
 
 def test_f4_triggers_when_debt_is_material_and_coverage_falls():
