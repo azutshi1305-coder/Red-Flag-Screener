@@ -40,3 +40,11 @@ These decisions are **recorded here only** — they are implemented in Step 4.
 - **Cash conversion is NaN when net income is zero or negative:** a negative ratio would look healthy when it actually reflects a loss. Decided by the project owner.
 - **Interest coverage is NaN when interest expense is zero:** coverage is not meaningful without interest. Step 8's low-interest-coverage flag must treat NaN as "no flag".
 - **Previous-year values need consecutive years:** ROA and asset turnover use the prior year's total assets only when the prior row is exactly one fiscal year earlier for the same company. A gap in years gives NaN, never a value from a different year or company.
+
+## Step 7: scores
+
+- **Piotroski test 5 debt-free rule:** a company with long-term debt of zero in both years passes test 5, even when the leverage ratio cannot be computed. A debt-free company should not be penalised for a leverage ratio that is zero before and after.
+- **Piotroski test 7 tolerance:** shares outstanding count as "no new shares" if they rise by less than 1% (`shares_t <= shares_(t-1) * 1.01`). Small increases are usually employee share schemes, not equity raises.
+- **Piotroski NaN handling:** a test whose inputs are missing is NaN, never 0, so missing data is not counted as a failed test. F is the sum of the available tests, and `piotroski_tests_available` records how many there were. The band is still shown, so read it together with that count.
+- **Beneish neutral values:** an index that cannot be computed is set to its neutral value and listed in `score_notes`. The seven ratio indices (DSRI, GMI, AQI, SGI, DEPI, SGAI, LVGI) use 1.0, meaning no change. TATA is a difference, not a ratio, so its neutral value is 0.0.
+- **AUROPHARMA SG&A:** FY2025 SG&A is missing, so SGAI is neutral for FY2025. FY2026 SGAI also needs FY2025 SG&A, so it is neutral too. This matches the Step 3 row above.
