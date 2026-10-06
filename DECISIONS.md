@@ -32,3 +32,11 @@ These decisions are **recorded here only** — they are implemented in Step 4.
 - **Years kept:** `data/processed/financials_clean.csv` keeps every fiscal year Yahoo reports, including FY2022, so it is a complete record. Scoring uses only FY2023–FY2026. Main scores are for FY2026, with FY2025 as a secondary year.
 - **Dividend gaps left as NaN:** blank `dividends_paid` values (e.g. Mankind FY2023–FY2025, Wockpharma, Gland, Sai Life) are not filled with zero or estimated. Dividends are used only in the Torrent retained-earnings roll-forward.
 - **Added Yahoo mappings:** `cost_of_revenue` uses the Yahoo row "Cost Of Revenue" (income statement). `dividends_paid` uses "Cash Dividends Paid" (cash flow), with "Common Stock Dividend Paid" as fallback. Neither was mapped in Step 3.
+
+## Step 6: ratios
+
+- **FY2022 kept in `ratios.csv`:** all fiscal years from the clean table are kept. Scoring uses FY2023–FY2026 only.
+- **ROA and ROE keep their sign:** a loss gives a negative ROA or ROE, which is a real value.
+- **Cash conversion is NaN when net income is zero or negative:** a negative ratio would look healthy when it actually reflects a loss. Decided by the project owner.
+- **Interest coverage is NaN when interest expense is zero:** coverage is not meaningful without interest. Step 8's low-interest-coverage flag must treat NaN as "no flag".
+- **Previous-year values need consecutive years:** ROA and asset turnover use the prior year's total assets only when the prior row is exactly one fiscal year earlier for the same company. A gap in years gives NaN, never a value from a different year or company.
