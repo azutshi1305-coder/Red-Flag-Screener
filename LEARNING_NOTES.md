@@ -82,3 +82,37 @@ This is my interview prep sheet.
 - Design decisions: Piotroski test 5 gives a point to companies with zero debt in both years; test 7 allows share increases under 1% (ESOPs aren't equity raises).
 - Found a bug in my own spreadsheet (the Beneish verdict pointed at the wrong cell). Lesson: check results against expectations.
 - This spreadsheet is the answer key for testing the Python code later.
+
+## Steps 6–9 (summary)
+
+### Step 6: Ratios
+- 11 ratios for all companies; previous-year values looked up per company with a check that years are consecutive (so a missing year never silently uses data from two years back).
+- First pytest tests: code matched my Excel hand calculation for Cipla to 4 decimals.
+- Decisions: cash conversion = NaN when net income <= 0 (the ratio's sign becomes misleading with losses); interest coverage = NaN when there's no interest expense.
+
+### Step 7: The three scores in code
+- Altman Z'', Piotroski F and Beneish M for all 20 companies; tests confirm Cipla matches my Excel (Z''=10.18, F=4, M=-2.40).
+- Fixed a "No module named src" error: scripts that import other scripts must be run from the project root.
+- Decomposed Beneish flags into each index's contribution vs the sector median:
+  - Abbott (M=-1.66, flagged): driven by AQI; current and non-current assets moved in opposite directions while their total grew steadily, so likely deposits reclassified by maturity, i.e. a probable false positive.
+  - Torrent (-1.78): AQI + DSRI from a debt-funded acquisition (acquisition artifact).
+  - Ajanta (-1.80): DSRI + TATA. Verified on Screener: receivable days 93 -> 124, CFO/operating profit 117% -> 59%, borrowings 47 -> 260 cr. Genuine working-capital deterioration (partly a reversal of an unusually strong FY2025).
+- Lesson: a hard cutoff misleads; the "flagged" company (Abbott) was likely fine, while an unflagged one (Ajanta) was the real concern.
+
+### Step 8: Red flags and risk score
+- Five custom flags (receivables vs sales, cash conversion 2 of 3 years, inventory build-up, debt stress, low interest cover) plus a combined risk score and Low / Watch / High bands.
+- Added a Beneish "Watch" zone (-2.22 to -1.78) because of the Ajanta vs Abbott lesson.
+- Materiality rule for debt stress (only if debt > 10% of equity) to avoid flagging trivial debt changes.
+- Changed the inventory flag to be relative to the sector median: the median company added 13.5 inventory days, so a fixed threshold flagged 9 of 20 companies for a sector-wide trend. Decided on logic, not to get a preferred ranking (avoiding data snooping).
+- Investigated Zydus: FY2026 acquisitions of Amplitude Surgical (EUR 256.8m) and Agenus' biologics facilities; borrowings 3,213 -> 12,496 cr. Receivable/inventory flags are partly consolidation artifacts, but the leverage increase is real.
+- Analyst notes file adds my qualitative judgment next to the scores.
+
+### Step 9: Charts
+- Seven charts in a consistent research-report style with headline titles that state the conclusion.
+- Design lessons: bars starting at 0 misled for negative M-scores (switched to a dot plot); dual-axis charts are misleading (split into two panels); color is never the only signal; quadrant labels must match the actual score bands.
+- Key findings:
+  - 3 of 20 companies screen High risk (Piramal, Zydus, Torrent); two of them because of acquisitions.
+  - Piramal is the only company both financially weak (Altman Grey) and weakening (F=3), with interest cover of just 0.48x. Its debt has been flat for years; the problem is earnings too low to carry it.
+  - Only Abbott crosses the Beneish threshold, and the driver looks benign.
+  - Six companies trigger no red flags (Mankind, Sai Life, Lupin, IPCA, Sun Pharma, Cipla).
+- Big lesson: a screener can't tell acquisition-driven growth from distress. Analyst judgment is essential.
