@@ -100,7 +100,7 @@ def add_source(fig, x=0.02, y=0.01):
     """Add the small grey footer every chart in the report shares."""
     fig.text(
         x, y,
-        "Source: Yahoo Finance, Screener.in | FY2026 | Analysis: Swastik Sharma",
+        "Source: Yahoo Finance, Screener.in | FY2026 | Analysis: Annapurna Zutshi",
         fontsize=8, color=TEXT_GREY, ha="left", va="bottom",
     )
 
